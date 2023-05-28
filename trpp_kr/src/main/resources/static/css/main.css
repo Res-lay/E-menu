@@ -1,0 +1,177 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    }
+    
+    /* Стили для header */
+    header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    }
+    
+    header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+    }
+    
+    header nav {
+    float: right;
+    }
+    
+    header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    
+    header nav li {
+    float: left;
+    margin-left: 20px;
+    }
+    
+    header nav a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: color 0.2s;
+    }
+    
+    header nav a:hover {
+    color: #f00;
+    }
+    
+    /* Стили для главного баннера */
+    .banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    }
+    
+    .banner h2 {
+    font-size: 48px;
+    margin: 0;
+    }
+    
+    .banner p {
+    font-size: 24px;
+    margin: 20px 0;
+    }
+    
+    .banner button {
+    background-color: #f00;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    }
+    
+    .banner button:hover {
+    background-color: #c00;
+    }
+    
+    /* Стили для специальных предложений */
+    .special-offers {
+    background-color: #f9f9f9;
+    padding: 50px;
+    }
+    
+    .special-offers h2 {
+    margin-top: 0;
+    }
+    
+    .special-offers ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .special-offers li {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+    }
+    
+    .special-offers li img {
+    max-width: 100%;
+    }
+    
+    .special-offers li h3 {
+    margin: 10px 0;
+    }
+    
+    .special-offers li p {
+    margin: 0;
+    }
+    
+    /* Стили для меню */
+    .menu {
+    padding: 50px;
+    }
+    
+    .menu h2 {
+    margin-top: 0;
+    }
+    
+    .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .menu li {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+    }
+    
+    .menu li h3 {
+    margin: 10px 0;
+    }
+    
+    .menu li p {
+    margin: 0;
+    }
+    
+    .menu li button {
+    background-color: #f00;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    }
+    
+    .menu li button:hover {
+    background-color: #c00;
+    }

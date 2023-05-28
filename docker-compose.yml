@@ -1,0 +1,27 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./trpp_kr
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://newpostgres:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=123123
+    networks:
+      - my-network
+  frontend:
+    build:
+      context: ./trpp_front/smartmenufront
+      dockerfile: Dockerfile
+    ports:
+      - 8081:8080
+    depends_on:
+      - backend
+networks:
+  my-network:
+    external: true
+
+
